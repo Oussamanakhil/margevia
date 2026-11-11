@@ -22,7 +22,7 @@ Optional asset regeneration: scripts/prepare-journal-assets.py uses Pillow; scri
 Home, index and articles expose static canonical/Open Graph/Twitter metadata; article pages also include BlogPosting data. Local metadata and image validation do not establish a successful preview in the live WhatsApp app; that app has not been tested.
 
 DEMO VIDEO
-The Dashboard / Demo video tabs are ready. Until a video is supplied, the video tab shows an honest coming-soon state. Set src in dist/video-config.js to a video asset or authorized hosted URL. Optional captions (English WebVTT) and poster are supported. The player has native controls, no autoplay, and pauses when switching back to Dashboard.
+The Demo video tab plays the supplied 15-second 1080p60 H.264 film with its matching WebP poster, configured in dist/video-config.js and stored under dist/assets/video/. It contains music and effects with no spoken dialogue, so no captions track is needed. Native controls, inline playback, metadata-only preload and no autoplay are preserved. Switching back to Dashboard pauses playback. Optional English WebVTT captions remain supported for future spoken content.
 
 PILOT PLANNER
 Choose a team, first review focus and location range. Send brief is disabled until the owner supplies a recipient and delivery is connected. Choices stay on the page; no brief is downloaded and no information is sent.

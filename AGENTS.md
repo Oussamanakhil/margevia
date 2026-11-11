@@ -14,7 +14,7 @@ Read PRODUCT.md and DESIGN.md before changing product or visual behavior. The de
 - dist/style.css: visual system and responsive layout.
 - dist/app.js: local demo and view tabs.
 - dist/motion.js: bounded motion and preference controls.
-- dist/video-config.js: video source, captions and poster; currently empty.
+- dist/video-config.js: supplied 15-second video source and poster; no dialogue captions required.
 - dist/llms.txt: public product summary for readers and agents.
 
 ## Video handoff

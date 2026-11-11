@@ -19,7 +19,7 @@ Budget: no library, scroll polling, perpetual loops, or layout animation. WAAPI 
 
 ## Demo view extension
 The user approved Dashboard / Demo video tabs above the sample workspace. Dashboard remains the initial view; violet identifies the selected tab. Preserve arrow-key and Home/End selection, roving tab focus, and a dashboard-return control in the video view. Both tabs stay side by side at full width on mobile.
-The video has not been supplied. Show the coming-soon panel and working dashboard return until a real source is configured; do not imply playable media is available. Future playback uses native controls and pauses when Dashboard is selected.
+The supplied 15-second 1080p60 film and matching poster are configured. Playback uses native controls and pauses when Dashboard is selected. No autoplay; music and effects only, with no spoken dialogue. The placeholder remains a fallback if the video configuration is cleared.
 
 ## Pilot planner update
 Use a native team select with Purchasing, Operations, Finance, Owner / management and Other; three explained focus radio rows; and location segments 1, 2–5, 6–10 and 11+. Send brief stays disabled with an honest availability notice. The user will supply the recipient later; no recipient or delivery service is connected, no brief is downloaded, and no information is sent.
