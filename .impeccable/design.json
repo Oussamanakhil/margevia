@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T00:12:29.739452+00:00",
+  "title": "Design System: Margevia",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(15% 0.00413 91.45)",
+          "oklch(26% 0.00413 91.45)",
+          "oklch(38% 0.00413 91.45)",
+          "oklch(49% 0.00413 91.45)",
+          "oklch(61% 0.00413 91.45)",
+          "oklch(72% 0.00413 91.45)",
+          "oklch(84% 0.00413 91.45)",
+          "oklch(95% 0.00413 91.45)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near Black",
+        "tonalRamp": [
+          "oklch(15% 0.00496 248.05)",
+          "oklch(26% 0.00496 248.05)",
+          "oklch(38% 0.00496 248.05)",
+          "oklch(49% 0.00496 248.05)",
+          "oklch(61% 0.00496 248.05)",
+          "oklch(72% 0.00496 248.05)",
+          "oklch(84% 0.00496 248.05)",
+          "oklch(95% 0.00496 248.05)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate Grey",
+        "tonalRamp": [
+          "oklch(15% 0.00934 253.91)",
+          "oklch(26% 0.00934 253.91)",
+          "oklch(38% 0.00934 253.91)",
+          "oklch(49% 0.00934 253.91)",
+          "oklch(61% 0.00934 253.91)",
+          "oklch(72% 0.00934 253.91)",
+          "oklch(84% 0.00934 253.91)",
+          "oklch(95% 0.00934 253.91)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline Grey",
+        "tonalRamp": [
+          "oklch(15% 0.00173 145.56)",
+          "oklch(26% 0.00173 145.56)",
+          "oklch(38% 0.00173 145.56)",
+          "oklch(49% 0.00173 145.56)",
+          "oklch(61% 0.00173 145.56)",
+          "oklch(72% 0.00173 145.56)",
+          "oklch(84% 0.00173 145.56)",
+          "oklch(95% 0.00173 145.56)"
+        ]
+      },
+      "purple": {
+        "role": "primary",
+        "displayName": "Review Violet",
+        "tonalRamp": [
+          "oklch(15% 0.19528 277.22)",
+          "oklch(26% 0.19528 277.22)",
+          "oklch(38% 0.19528 277.22)",
+          "oklch(49% 0.19528 277.22)",
+          "oklch(61% 0.19528 277.22)",
+          "oklch(72% 0.19528 277.22)",
+          "oklch(84% 0.19528 277.22)",
+          "oklch(95% 0.19528 277.22)"
+        ]
+      },
+      "purple-bright": {
+        "role": "primary",
+        "displayName": "Bright Violet",
+        "tonalRamp": [
+          "oklch(15% 0.20414 277.31)",
+          "oklch(26% 0.20414 277.31)",
+          "oklch(38% 0.20414 277.31)",
+          "oklch(49% 0.20414 277.31)",
+          "oklch(61% 0.20414 277.31)",
+          "oklch(72% 0.20414 277.31)",
+          "oklch(84% 0.20414 277.31)",
+          "oklch(95% 0.20414 277.31)"
+        ]
+      },
+      "purple-soft": {
+        "role": "primary",
+        "displayName": "Pale Violet",
+        "tonalRamp": [
+          "oklch(15% 0.02138 285.99)",
+          "oklch(26% 0.02138 285.99)",
+          "oklch(38% 0.02138 285.99)",
+          "oklch(49% 0.02138 285.99)",
+          "oklch(61% 0.02138 285.99)",
+          "oklch(72% 0.02138 285.99)",
+          "oklch(84% 0.02138 285.99)",
+          "oklch(95% 0.02138 285.99)"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "tonalRamp": [
+          "oklch(15% 0.03581 243.34)",
+          "oklch(26% 0.03581 243.34)",
+          "oklch(38% 0.03581 243.34)",
+          "oklch(49% 0.03581 243.34)",
+          "oklch(61% 0.03581 243.34)",
+          "oklch(72% 0.03581 243.34)",
+          "oklch(84% 0.03581 243.34)",
+          "oklch(95% 0.03581 243.34)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Confirmation Green",
+        "tonalRamp": [
+          "oklch(15% 0.09050 163.03)",
+          "oklch(26% 0.09050 163.03)",
+          "oklch(38% 0.09050 163.03)",
+          "oklch(49% 0.09050 163.03)",
+          "oklch(61% 0.09050 163.03)",
+          "oklch(72% 0.09050 163.03)",
+          "oklch(84% 0.09050 163.03)",
+          "oklch(95% 0.09050 163.03)"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Review Amber",
+        "tonalRamp": [
+          "oklch(15% 0.09836 66.09)",
+          "oklch(26% 0.09836 66.09)",
+          "oklch(38% 0.09836 66.09)",
+          "oklch(49% 0.09836 66.09)",
+          "oklch(61% 0.09836 66.09)",
+          "oklch(72% 0.09836 66.09)",
+          "oklch(84% 0.09836 66.09)",
+          "oklch(95% 0.09836 66.09)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero heading desktop default."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings desktop default."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Invoice detail title."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base page type; component copy uses smaller contextual sizes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Operational metadata and small labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "source",
+        "value": "0 8px 32px #1521330a",
+        "purpose": "Hero document cards."
+      },
+      {
+        "name": "hub",
+        "value": "0 10px 30px #5355d42b",
+        "purpose": "Hero reconciliation hub."
+      },
+      {
+        "name": "ticket",
+        "value": "0 14px 44px #302f6f0e",
+        "purpose": "Hero result ticket."
+      },
+      {
+        "name": "mobile-menu",
+        "value": "0 10px 20px #20203a0d",
+        "purpose": "Expanded mobile navigation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "hero-sequence",
+        "value": "2770ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Finite document → connector → hub/ring → result connection → ticket/amount/check sequence. First visible entry once; replay and explicit enabling can repeat it. Documents: 750ms with 210ms stagger; final check ends at 2350+420ms."
+      },
+      {
+        "name": "settle",
+        "value": "380ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Opacity .35 to 1 and translateY(8px) to 0. Feature children stagger 55ms; invoice heading/summary/rows stagger 30ms capped at 120ms. Also comparison, workflow source details, workspace summary and opened FAQ text."
+      },
+      {
+        "name": "interaction-feedback",
+        "value": "220–260ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Download feedback opacity .4 to 1 over 220ms; review status scale .94 to 1 and opacity .4 to 1 over 260ms."
+      },
+      {
+        "name": "section-entry",
+        "value": "IntersectionObserver threshold .18; observed once",
+        "purpose": "Workflow tracks: 1100ms, 260ms stagger; comparisons: column settle 140ms stagger and 550ms arrow; team rows: 500ms opacity with 100ms stagger; workspace summary settle; pilot border highlight: 900ms."
+      },
+      {
+        "name": "control-transition",
+        "value": ".2s / .22s / .25s",
+        "purpose": "Buttons, tabs, invoice options, FAQ icons and mobile menu bars .2s; team-row background .22s; arrow transforms and navigation underline .25s. Arrows move 3px right, download icons 2px down; pressed buttons 1px down."
+      },
+      {
+        "name": "playback-lifecycle",
+        "value": "WAAPI active Map with scope visibility and document visibility",
+        "purpose": "Pause offscreen or hidden-tab animations; resume only visible scopes. Cancel prior animation for a replaced interaction scope and cancel all on motion preference changes. No perpetual loops or scroll polling."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "OS default with page-session explicit override",
+        "purpose": "Initially follow prefers-reduced-motion. Reduce motion cancels WAAPI, disables CSS animation/transitions, smooth scrolling and replay. Enable motion explicitly opts in for this page, overrides OS reduction and starts the hero. No persistent storage."
+      },
+      {
+        "name": "hero-motion-layout",
+        "value": "450px desktop / 470px at max-width:600px",
+        "purpose": "Right-aligned caption bottom -10px / -2px; controls bottom -51px / -43px. Control minimum height 36px / 40px. Existing visual tokens and component previews remain unchanged."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "800px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Explore the demo",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Rectangular action with the implemented hover and focus treatment.",
+      "html": "<button class=\"ds-button-primary\">Explore the demo</button>",
+      "css": ".ds-button-primary{font-family:var(--font,'DM Sans',sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:13px 21px;border:1px solid transparent;border-radius:0;font-size:13px;font-weight:500;cursor:pointer;transition:background .2s,transform .2s;background:var(--purple,#5758db);color:#fff}.ds-button-primary:hover{background:#4446bf;transform:translateY(-1px)}.ds-button-primary:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}.ds-button-primary:disabled{cursor:default;opacity:.6}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
+    },
+    {
+      "name": "Plan a pilot",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Rectangular action with the implemented hover and focus treatment.",
+      "html": "<button class=\"ds-button-secondary\">Plan a pilot</button>",
+      "css": ".ds-button-secondary{font-family:var(--font,'DM Sans',sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:13px 21px;border:1px solid transparent;border-radius:0;font-size:13px;font-weight:500;cursor:pointer;transition:background .2s,transform .2s;background:var(--purple,#5758db);color:#fff}.ds-button-secondary:hover{background:#4446bf;transform:translateY(-1px)}.ds-button-secondary:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}.ds-button-secondary{background:var(--white,#fff);color:var(--ink,#191b1d);border-color:#c8c9cb}.ds-button-secondary:hover{background:#f6f5ff;border-color:var(--purple,#5758db)}.ds-button-secondary:disabled{cursor:default;opacity:.6}@media(prefers-reduced-motion:reduce){.ds-button-secondary{transition:none}}"
+    },
+    {
+      "name": "Pilot select",
+      "kind": "input",
+      "refersTo": "pilot-select",
+      "description": "Native select with a visible label; no invented hover style.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-team\">Your team</label><select class=\"ds-select\" id=\"ds-team\"><option>Restaurant group</option><option>Independent caterer</option></select>",
+      "css": ".ds-field-label{font-family:var(--font,'DM Sans',sans-serif);display:block;font-size:12px;color:#4a4f59;margin-bottom:8px}.ds-select{font-family:var(--font,'DM Sans',sans-serif);width:100%;height:43px;padding:11px 12px;font-size:12px;background:#fff;color:#2a2d33;border:1px solid #cfcfdc;border-radius:3px}.ds-select:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}"
+    },
+    {
+      "name": "Header navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Desktop text navigation, shown without the application mobile-menu handler.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Preview navigation\"><a href=\"#demo\">Interactive demo</a><a href=\"#teams\">For your team</a><a href=\"#questions\">Questions</a></nav>",
+      "css": ".ds-nav{font-family:var(--font,'DM Sans',sans-serif);display:flex;align-items:center;gap:28px;background:var(--paper,#f3f2ef);min-height:88px;font-size:13px}.ds-nav a{color:var(--ink,#191b1d);text-decoration:none}.ds-nav a:hover{color:var(--purple,#5758db)}.ds-nav a:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}"
+    },
+    {
+      "name": "Review status",
+      "kind": "chip",
+      "refersTo": "status-tag",
+      "description": "Noninteractive status labels distinguish review, follow-up and matched states.",
+      "html": "<span class=\"ds-tag\">Ready for follow-up</span> <span class=\"ds-tag ds-warning\">Needs review</span> <span class=\"ds-tag ds-success\">All lines matched</span>",
+      "css": ".ds-tag{font-family:var(--font,'DM Sans',sans-serif);display:inline-flex;align-items:center;gap:5px;background:#f0efff;color:var(--purple,#5758db);padding:5px 9px;border-radius:4px;font-size:12px;white-space:nowrap}.ds-warning{background:#fcf3e7;color:#8b5c22}.ds-success{background:#eaf5ee;color:#26704c}"
+    },
+    {
+      "name": "Source document",
+      "kind": "card",
+      "refersTo": "source-card",
+      "description": "Illustrative source object; shadow and icon are self-contained.",
+      "html": "<div class=\"ds-source\"><span class=\"ds-doc-icon\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"/><path d=\"M14 2v6h6M8 13h8M8 17h6\"/></svg></span><div><b>Supplier price list</b><span>Agreed unit prices</span></div><span class=\"ds-extension\">PDF</span></div>",
+      "css": ".ds-source{font-family:var(--font,'DM Sans',sans-serif);display:flex;align-items:center;gap:11px;width:238px;padding:17px 14px;background:#fff;border:1px solid #e0e1e6;border-radius:7px;box-shadow:0 8px 32px #1521330a}.ds-source b{display:block;font-size:12px;font-weight:500}.ds-source div>span{display:block;font-size:12px;color:#6a6d75;margin-top:4px}.ds-doc-icon{width:31px;height:35px;display:grid;place-items:center;color:#7a7e90;background:#f6f6fa;border-radius:3px}.ds-extension{font-size:12px;letter-spacing:1px;margin-left:auto;color:#626574}"
+    },
+    {
+      "name": "Invoice choice",
+      "kind": "button",
+      "refersTo": "invoice-option",
+      "description": "Selected supplier choice; application updates the invoice on activation.",
+      "html": "<button class=\"ds-invoice\" aria-pressed=\"true\"><span class=\"ds-initial\">G</span><span><b>Greenfield Foods</b><small>GF-1042 · 04 Nov</small></span><span class=\"ds-badge\">2</span></button>",
+      "css": ".ds-invoice{font-family:var(--font,'DM Sans',sans-serif);display:flex;align-items:center;gap:9px;width:100%;padding:15px 10px;text-align:left;border:1px solid #dcdaf9;border-radius:5px;background:#efeffc;cursor:pointer}.ds-invoice:hover{background:#f4f4fb}.ds-invoice:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}.ds-initial{display:grid;place-items:center;width:26px;height:29px;background:#fff;border:1px solid #dedee6;border-radius:4px;font-size:12px;color:#666b7c}.ds-invoice b{font-size:12px;font-weight:500;display:block}.ds-invoice small{font-size:12px;color:#626574;display:block;margin-top:4px}.ds-badge{font-size:12px;background:#fff;border-radius:3px;color:var(--purple,#5758db);padding:3px 5px;margin-left:auto}"
+    },
+    {
+      "name": "Feature tab",
+      "kind": "button",
+      "refersTo": "feature-tab",
+      "description": "Selected feature-tab appearance; keyboard selection is supplied by the application.",
+      "html": "<button class=\"ds-feature\" role=\"tab\" aria-selected=\"true\">Compare supplier prices</button>",
+      "css": ".ds-feature{font-family:var(--font,'DM Sans',sans-serif);display:flex;align-items:center;gap:13px;padding:22px;border:1px solid #cfcfcc;background:#fff;color:var(--purple,#5758db);text-align:left;font-size:14px;cursor:pointer}.ds-feature:hover{background:#fbfbff}.ds-feature:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}"
+    },
+    {
+      "name": "Comparison table",
+      "kind": "custom",
+      "refersTo": "comparison-table",
+      "description": "Compact evidence rows with tabular numerical alignment and horizontal overflow.",
+      "html": "<div class=\"ds-table-scroll\" tabindex=\"0\" aria-label=\"Sample comparison\"><table class=\"ds-table\"><thead><tr><th>Item</th><th>Reference</th><th>Invoice</th><th>Difference</th></tr></thead><tbody><tr><td>Chicken breast</td><td>€8.40 / kg</td><td>€9.10 / kg</td><td class=\"ds-difference\">+€84.00</td></tr><tr><td>Unsalted butter</td><td>€6.20 / pack</td><td>€6.20 / pack</td><td class=\"ds-match\">Matched</td></tr></tbody></table></div>",
+      "css": ".ds-table-scroll{overflow:auto}.ds-table-scroll:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:3px}.ds-table{font-family:var(--font,'DM Sans',sans-serif);width:100%;border-collapse:collapse;white-space:nowrap;font-size:12px;font-variant-numeric:tabular-nums}.ds-table th{text-align:right;color:#626774;font-size:12px;font-weight:400;padding:12px 10px;border-bottom:1px solid #e5e5eb}.ds-table td{padding:17px 10px;border-bottom:1px solid #eeeef2;text-align:right;color:#5e6370}.ds-table th:first-child,.ds-table td:first-child{text-align:left;padding-left:0}.ds-table td:first-child{color:#2e333d}.ds-table td.ds-difference{color:var(--purple,#5758db);font-weight:500}.ds-table td.ds-match{color:var(--green,#277455)}@media(max-width:600px){.ds-table{min-width:490px}}"
+    },
+    {
+      "name": "Demo view switcher and pending video",
+      "kind": "custom",
+      "description": "Video-selected visual preview of the two-view switcher. The live page initially selects Dashboard; Left/Right, Home and End select and focus tabs, the return control focuses Dashboard, and leaving video pauses playback. No video source is supplied. This HTML/CSS preview does not reproduce application JavaScript.",
+      "html": "<div class=\"ds-demo-tabs\" role=\"tablist\" aria-label=\"Explore Margevia\"><button role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Dashboard</button><button id=\"ds-video-tab\" role=\"tab\" aria-selected=\"true\" aria-controls=\"ds-video-panel\">Demo video</button></div><div class=\"ds-video-panel\" id=\"ds-video-panel\" role=\"tabpanel\" aria-labelledby=\"ds-video-tab\"><div class=\"ds-video-placeholder\"><svg class=\"ds-video-illustration\" viewBox=\"0 0 96 72\" aria-hidden=\"true\"><rect x=\"1\" y=\"1\" width=\"94\" height=\"70\" rx=\"8\"/><path d=\"M1 16h94M12 8h2m6 0h2m6 0h2\"/><path class=\"ds-video-play\" d=\"m41 29 19 12-19 12z\"/></svg><h3>A closer look at Margevia.<br><span>Coming soon on video.</span></h3><p>The product walkthrough will be available here. In the meantime, try the interactive dashboard with sample invoices.</p><button class=\"ds-video-return\" type=\"button\">Explore the dashboard</button></div></div>",
+      "css": ".ds-demo-tabs{font-family:var(--font,'DM Sans',sans-serif);display:inline-flex;align-items:center;gap:4px;padding:5px;border:1px solid #d9d8e3;background:#f8f8fb;border-radius:7px;margin:0 0 24px}.ds-demo-tabs button{font-family:inherit;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:11px 22px;font-size:13px;font-weight:500;border:0;border-radius:4px;background:transparent;color:#62666b;cursor:pointer;transition:background-color .2s,color .2s}.ds-demo-tabs button[aria-selected=true]{background:var(--purple,#5758db);color:#fff}.ds-demo-tabs button:not([aria-selected=true]):hover{background:#ecebf7;color:var(--ink,#191b1d)}.ds-demo-tabs button:focus-visible,.ds-video-return:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}.ds-video-panel{font-family:var(--font,'DM Sans',sans-serif);color:var(--ink,#191b1d);border:1px solid #cfcedd;border-radius:8px;background:#f9f9fc;overflow:hidden}.ds-video-placeholder{min-height:510px;padding:58px 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.ds-video-illustration{width:96px;height:72px;fill:#fff;stroke:#bdbbdb;stroke-width:1.3;margin-bottom:28px}.ds-video-play{fill:#efefff;stroke:var(--purple,#5758db)}.ds-video-placeholder h3{font-size:30px;letter-spacing:-.7px;line-height:1.25;font-weight:400;margin:0 0 18px}.ds-video-placeholder h3 span{color:#737574}.ds-video-placeholder p{max-width:425px;font-size:14px;line-height:1.7;color:var(--muted,#62666b);margin:0 0 20px}.ds-video-return{font-family:inherit;display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:500;color:var(--purple,#5758db);padding:0;border:0;background:none;min-height:44px;cursor:pointer}.ds-video-return:hover{text-decoration:underline}@media(max-width:600px){.ds-demo-tabs{display:flex;width:100%;margin-bottom:22px}.ds-demo-tabs button{flex:1;padding:11px 10px;font-size:12px}.ds-video-placeholder{min-height:420px;padding:40px 22px}.ds-video-placeholder h3{font-size:26px}.ds-video-placeholder p{font-size:13px}.ds-video-panel{margin:0 -10px}}@media(prefers-reduced-motion:reduce){.ds-demo-tabs button{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Light technical precision",
+    "overview": "Margevia adapts the user-selected Nanonets reference through DM Sans, off-white framing, white content surfaces, fine grey borders and violet actions. The atmosphere is calm and precise: generous marketing space leads into a denser, source-backed working sample.\n\nBlack square frame markers give the page its structural signature. Small rounded document cards describe the reconciliation story, while primary actions remain rectangular. Product facts and human review remain visible alongside the interface.",
+    "keyCharacteristics": [
+      "Regular-weight headlines with restrained violet emphasis.",
+      "Inset hairline framing with black square markers.",
+      "White evidence surfaces against warm off-white sections.",
+      "Compact tabular figures and explicit review status."
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep source evidence and review status adjacent to the amounts they explain.",
+      "Do preserve the square action buttons, fine borders and restrained violet emphasis.",
+      "Do retain the visible mobile table scroll hint and keyboard-focusable scroll region.",
+      "Do use role names as the team section headings.",
+      "Do respect reduced-motion preferences."
+    ],
+    "donts": [
+      "Don't turn flagged discrepancies into claims of recovered money.",
+      "Don't substitute decorative customer logos or unverified social proof.",
+      "Don't round every surface into the same card shape.",
+      "Don't shrink the invoice table to fit mobile; preserve horizontal scrolling."
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# Margevia
+
+Margevia is a product concept for supplier invoice reconciliation, designed for purchasing, operations and finance teams at restaurant groups and caterers.
+
+## This website
+- English landing page with an interactive dashboard using three fictional invoices.
+- Compare agreed prices, billed prices and delivered quantities.
+- Mark differences for follow-up and export sample comparisons as CSV.
+- Download a locally generated pilot discovery brief.
+- The demo video is pending.
+
+## Product status
+This is a frontend product preview. Live document processing, OCR, supplier contact, accounting integrations and recovered savings are not implemented or claimed. Data is fictional.
+
+## Source
+https://github.com/Oussamanakhil/margevia
