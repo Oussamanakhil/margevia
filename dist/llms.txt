@@ -6,7 +6,7 @@ Margevia is a product concept for supplier invoice reconciliation, designed for 
 - English landing page with an interactive dashboard using three fictional invoices.
 - Compare agreed prices, billed prices and delivered quantities.
 - Mark differences for follow-up and export sample comparisons as CSV.
-- Download a locally generated pilot discovery brief.
+- Choose a pilot team, review focus and location range locally. Send brief is unavailable pending recipient and delivery setup; no brief is downloaded or sent.
 - The demo video is pending.
 
 ## Product status

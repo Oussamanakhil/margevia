@@ -12,6 +12,12 @@ Vercel publishes dist/ with no build or install step. Configuration is in vercel
 DEMO VIDEO
 The Dashboard / Demo video tabs are ready. Until a video is supplied, the video tab shows an honest coming-soon state. Set src in dist/video-config.js to a video asset or authorized hosted URL. Optional captions (English WebVTT) and poster are supported. The player has native controls, no autoplay, and pauses when switching back to Dashboard.
 
+PILOT PLANNER
+Choose a team, first review focus and location range. Send brief is disabled until the owner supplies a recipient and delivery is connected. Choices stay on the page; no brief is downloaded and no information is sent.
+
+MOTION
+Motion is enabled by default at the owner’s request. Reduce motion changes this page session only; there is no Replay control.
+
 LIMITATIONS
 All invoice data is fictional. No live OCR, uploads, supplier contacts, accounting integrations, or pilot submissions. Review state lasts only for the current page visit.
 

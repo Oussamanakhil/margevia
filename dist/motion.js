@@ -1,16 +1,14 @@
 'use strict';
 (() => {
   const root = document.documentElement;
-  const preference = matchMedia('(prefers-reduced-motion: reduce)');
   const hero = document.querySelector('.hero-visual');
-  const replay = document.querySelector('#replay-motion');
   const toggle = document.querySelector('#motion-toggle');
   const active = new Map();
   const visible = new WeakMap();
   const ease = 'cubic-bezier(.16,1,.3,1)';
-  let quiet = null;
+  let quiet = false;
   let heroPlayed = false;
-  const reduced = () => quiet === null ? preference.matches : quiet;
+  const reduced = () => quiet;
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       visible.set(entry.target, entry.isIntersecting);
@@ -65,12 +63,8 @@
     stop();
     toggle.setAttribute('aria-pressed', String(reduced()));
     toggle.textContent = reduced() ? 'Enable motion' : 'Reduce motion';
-    toggle.title = preference.matches && quiet === null ? 'Your device prefers reduced motion. Enable animation for this page only.' : ''; 
-    replay.disabled = reduced();
   }
   toggle.addEventListener('click', () => { quiet = !reduced(); updatePreference(); if (!reduced()) playHero(); });
-  preference.addEventListener('change', updatePreference);
-  replay.addEventListener('click', playHero);
   document.addEventListener('visibilitychange', () => {
     active.forEach((scope, animation) => {
       if (document.hidden) animation.pause();
