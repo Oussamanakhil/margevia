@@ -14,3 +14,35 @@ if(copyButton){
   catch{const fallback=document.querySelector('#copy-fallback');fallback.hidden=false;fallback.focus();fallback.select();feedback.textContent='Select and copy the link below.';}
  });
 }
+
+// Keep the contents rail aligned with the section crossing the reading line.
+const articleLinks=Array.from(document.querySelectorAll('.article-aside ol a[href^="#"]'));
+const articleSections=articleLinks.map(link=>document.getElementById(link.hash.slice(1)));
+if(articleLinks.length&&articleSections.every(Boolean)){
+ let currentSection=-1;
+ let framePending=false;
+ function updateReadingSection(){
+  framePending=false;
+  const headerBottom=document.querySelector('.header').getBoundingClientRect().bottom;
+  const readingLine=Math.max(headerBottom+40,Math.min(innerHeight*.32,320));
+  let next=-1;
+  articleSections.forEach((section,index)=>{if(section.getBoundingClientRect().top<=readingLine)next=index;});
+  if(next===currentSection)return;
+  currentSection=next;
+  articleLinks.forEach((link,index)=>{
+   if(index===next)link.setAttribute('aria-current','location');
+   else link.removeAttribute('aria-current');
+  });
+ }
+ function scheduleReadingUpdate(){
+  if(framePending)return;
+  framePending=true;
+  requestAnimationFrame(updateReadingSection);
+ }
+ window.addEventListener('scroll',scheduleReadingUpdate,{passive:true});
+ window.addEventListener('resize',scheduleReadingUpdate);
+ window.addEventListener('hashchange',scheduleReadingUpdate);
+ window.addEventListener('pageshow',scheduleReadingUpdate);
+ document.fonts.ready.then(scheduleReadingUpdate);
+ updateReadingSection();
+}

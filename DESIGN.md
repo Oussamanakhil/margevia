@@ -253,3 +253,5 @@ The sidecar contains eleven representative HTML/CSS previews. Interactive previe
 - Don't substitute decorative customer logos or unverified social proof.
 - Don't round every surface into the same card shape.
 - Don't shrink the invoice table to fit mobile; preserve horizontal scrolling.
+
+The article contents rail tracks the section crossing a reading line below the sticky header. Its current link uses a pale-violet surface, violet text, medium weight and a small dot, with aria-current="location" for assistive technology. Updates preserve keyboard focus and the URL; scrolling before the first section clears the cue. The mobile in-flow contents list uses the same active state.
