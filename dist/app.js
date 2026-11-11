@@ -51,12 +51,37 @@ demoTabs.forEach((tab,index)=>{
  tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight'||event.key==='ArrowLeft')next=1-index;else if(event.key==='Home')next=0;else if(event.key==='End')next=demoTabs.length-1;else return;event.preventDefault();selectDemoView(demoTabs[next],true);});
 });
 document.querySelector('#show-dashboard').addEventListener('click',()=>selectDemoView(demoTabs[0],true));
+const videoToggle=document.querySelector('#video-toggle');
+const videoStatus=document.querySelector('#video-status');
+function syncVideoControl(){
+ const playing=!demoVideo.paused&&!demoVideo.ended;
+ videoToggle.setAttribute('aria-label',playing?'Pause video':'Play video');
+ videoToggle.querySelector('span').textContent=playing?'Pause':'Play';
+ videoToggle.querySelector('.video-play-icon').hidden=playing;
+ videoToggle.querySelector('.video-pause-icon').hidden=!playing;
+}
+function showVideoError(){
+ videoStatus.textContent='The video could not load. Select Play to try again.';
+ videoStatus.hidden=false;
+ syncVideoControl();
+}
+videoToggle.addEventListener('click',async()=>{
+ if(!demoVideo.paused){demoVideo.pause();return;}
+ videoStatus.hidden=true;
+ if(demoVideo.error)demoVideo.load();
+ try{await demoVideo.play();}
+ catch(error){if(error.name!=='AbortError')showVideoError();}
+});
+['play','pause','ended'].forEach(event=>demoVideo.addEventListener(event,syncVideoControl));
+demoVideo.addEventListener('play',()=>{if(document.querySelector('#video-view').hidden)demoVideo.pause();});
+demoVideo.addEventListener('error',showVideoError);
+demoVideo.addEventListener('contextmenu',event=>event.preventDefault());
 const videoConfig=window.MARGEVIA_VIDEO||{};
 if(typeof videoConfig.src==='string'&&videoConfig.src.trim()){
  demoVideo.src=videoConfig.src.trim();
  if(videoConfig.poster)demoVideo.poster=videoConfig.poster;
  if(videoConfig.captions){const track=document.createElement('track');track.kind='captions';track.label='English';track.srclang='en';track.src=videoConfig.captions;track.default=true;demoVideo.append(track);}
- demoVideo.hidden=false;document.querySelector('#video-placeholder').hidden=true;
+ demoVideo.hidden=false;document.querySelector('#video-controls').hidden=false;document.querySelector('#video-placeholder').hidden=true;
 }
 
 // Links that promise a sample or review must reveal the dashboard.

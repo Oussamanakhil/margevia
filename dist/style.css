@@ -56,3 +56,17 @@ html[data-motion=reduced]{scroll-behavior:auto}html[data-motion=reduced] *,html[
 .pilot-section #pilot-feedback{font-size:12px;line-height:1.65;margin:12px 0 0;color:#565b68}
 @media(max-width:800px){.pilot-section{grid-template-columns:1fr;gap:25px}.pilot-section>div{padding-top:0}.pilot-section>div>p{max-width:480px}.pilot-section form{max-width:600px;width:100%}}
 @media(max-width:600px){.pilot-section form{padding:20px 16px;margin-top:28px}.pilot-section .focus-choice{padding:13px 9px;gap:10px}.location-options{gap:6px}}
+
+/* One persistent playback control, anchored inside the film. */
+.video-panel{position:relative}
+.video-controls{position:absolute;inset:0;pointer-events:none}
+.video-controls[hidden],.video-toggle .icon[hidden],#video-status[hidden]{display:none}
+.video-toggle{position:absolute;right:20px;bottom:20px;display:grid;place-items:center;width:52px;height:52px;min-height:52px;padding:0;border:1px solid #c7c4ee;border-radius:8px;background:var(--white);color:var(--purple);pointer-events:auto}
+.video-toggle:hover{background:var(--purple-soft);color:var(--purple)}
+.video-toggle>span{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.video-toggle .icon{width:24px;height:24px;transform:none!important}
+.video-toggle .video-play-icon{fill:currentColor;stroke:none;margin-left:3px}
+.video-toggle .video-pause-icon{stroke-width:3;stroke-linecap:round}
+.video-toggle:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
+#video-status{position:absolute;left:14px;right:82px;bottom:14px;background:var(--white);padding:12px;font-size:14px;line-height:1.5;color:var(--ink);margin:0}
+@media(max-width:600px){.video-toggle{right:12px;bottom:12px;width:44px;height:44px;min-height:44px}.video-toggle .icon{width:22px;height:22px}#video-status{right:68px;font-size:12px;padding:8px}}

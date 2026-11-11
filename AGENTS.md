@@ -18,7 +18,7 @@ Read PRODUCT.md and DESIGN.md before changing product or visual behavior. The de
 - dist/llms.txt: public product summary for readers and agents.
 
 ## Video handoff
-When the user supplies the video, add it under dist/assets/ or use the authorized hosted URL, then set src in dist/video-config.js. Add English WebVTT captions for spoken content and an optional poster. Native video controls are prepared. Never autoplay audio. Switching back to Dashboard pauses playback.
+When the user supplies the video, add it under dist/assets/ or use the authorized hosted URL, then set src in dist/video-config.js. Add English WebVTT captions for spoken content and an optional poster. The supplied film uses one accessible Play/Pause button; do not restore download, overflow, speed or fullscreen controls. Never autoplay audio. Switching back to Dashboard pauses playback.
 
 ## Product constraints
 The demo uses fictional records. Do not invent customers, revenue, savings, integrations or live AI processing. Keep the website publicly accessible without a sign-in gate. Do not add secrets or personal files to the repository.

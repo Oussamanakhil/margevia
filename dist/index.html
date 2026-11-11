@@ -5,7 +5,7 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/dm-sans-400.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="/journal.css"><script defer src="video-config.js?v=film-1"></script><script defer src="app.js"></script><script defer src="motion.js"></script>
+  <link rel="stylesheet" href="style.css?v=player-3"><link rel="stylesheet" href="/journal.css"><script defer src="video-config.js?v=film-1"></script><script defer src="app.js?v=player-3"></script><script defer src="motion.js"></script>
 
 <title>Margevia — Every purchase, accounted for.</title><meta name="description" content="Compare supplier invoices, review the evidence and keep credits in sight. Explore the Margevia product preview."><link rel="canonical" href="https://margevia.vercel.app/">
 <meta name="robots" content="index,follow"><meta name="theme-color" content="#f3f2ef">
@@ -86,7 +86,8 @@
         <p>The product walkthrough will be available here. In the meantime, try the interactive dashboard with sample invoices.</p>
         <button class="text-link" type="button" id="show-dashboard">Explore the dashboard <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button>
       </div>
-      <video id="demo-video" controls playsinline preload="metadata" aria-label="Margevia product walkthrough" hidden></video>
+      <video id="demo-video" playsinline preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture disableremoteplayback aria-label="Margevia product walkthrough" hidden></video>
+      <div id="video-controls" class="video-controls" hidden><button id="video-toggle" class="button video-toggle" type="button" aria-controls="demo-video" aria-label="Play video"><svg class="icon video-play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z"/></svg><svg class="icon video-pause-icon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M9 5v14M15 5v14"/></svg><span>Play</span></button><p id="video-status" role="status" hidden></p></div>
     </div>
   </section>
   <section id="how-it-works" class="section how-section"><div class="section-heading"><h2>From scattered documents<br><span>to a clear next step.</span></h2><p>A focused workflow for the checks that are easy to miss in a busy purchasing week.</p></div><div class="steps"><article><span class="step-number">01</span><h3>Bring the records together.</h3><p>Start with your supplier price list, delivery records and invoices. Keep the original documents attached to the review.</p><span class="step-files">Price list <span>+</span> Delivery note <span>+</span> Invoice</span></article><article><span class="step-number">02</span><h3>Review the differences.</h3><p>Check quantities, unit prices and line totals side by side. Investigate the exceptions with the source figures in view.</p><div class="step-match"><span>€8.40</span><svg class="icon"><use href="#arrow"/></svg><span>€9.10</span><b>Review</b></div></article><article><span class="step-number">03</span><h3>Follow it through.</h3><p>Prepare a supplier query. Record the response. Close the loop when the corrected invoice or credit has arrived.</p><div class="step-complete"><svg class="icon"><use href="#check"/></svg>Reviewed <span>→</span> Follow-up <span>→</span> Resolved</div></article></div></section>
