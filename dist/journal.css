@@ -15,3 +15,5 @@
 .article-aside li a{position:relative;padding:8px 12px 8px 24px;border-radius:4px}
 .article-aside li a[aria-current=location]{background:var(--purple-soft);color:var(--purple);font-weight:500}
 .article-aside li a[aria-current=location]::before{content:"";position:absolute;left:9px;top:15px;width:6px;height:6px;border-radius:50%;background:currentColor}
+
+@media(max-width:600px){.article-aside li a{min-height:44px}}

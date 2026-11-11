@@ -255,3 +255,5 @@ The sidecar contains eleven representative HTML/CSS previews. Interactive previe
 - Don't shrink the invoice table to fit mobile; preserve horizontal scrolling.
 
 The article contents rail tracks the section crossing a reading line below the sticky header. Its current link uses a pale-violet surface, violet text, medium weight and a small dot, with aria-current="location" for assistive technology. Updates preserve keyboard focus and the URL; scrolling before the first section clears the cue. The mobile in-flow contents list uses the same active state.
+
+The final mobile readability pass uses 14px explanatory copy in feature, workflow, team, FAQ and pilot sections while retaining compact dashboard data. Menu buttons, expanded navigation links and article contents links provide at least 44px touch height. Published copy and metadata use no em dashes.

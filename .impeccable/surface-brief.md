@@ -23,3 +23,6 @@ The supplied 15-second 1080p60 film and matching poster are configured. Playback
 
 ## Pilot planner update
 Use a native team select with Purchasing, Operations, Finance, Owner / management and Other; three explained focus radio rows; and location segments 1, 2–5, 6–10 and 11+. Send brief stays disabled with an honest availability notice. The user will supply the recipient later; no recipient or delivery service is connected, no brief is downloaded, and no information is sent.
+
+## Final review, 11 November 2026
+All published text, metadata and CSV labels are free of em dashes. Mobile explanatory text is 14px and menu/navigation touch targets are at least 44px high. Price and credit feature links explicitly open the actionable Greenfield example; delivery opens Harbour. The final reviewer marked all identified findings resolved and the surface ready to ship. Physical-device gestures, screen-reader output and live WhatsApp rendering were not independently tested.

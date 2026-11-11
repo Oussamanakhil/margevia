@@ -1,4 +1,4 @@
-MARGEVIA — PUBLIC PRODUCT PREVIEW
+MARGEVIA | PUBLIC PRODUCT PREVIEW
 
 A lightweight English landing page and interactive invoice reconciliation sample.
 

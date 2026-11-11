@@ -70,3 +70,11 @@ html[data-motion=reduced]{scroll-behavior:auto}html[data-motion=reduced] *,html[
 .video-toggle:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
 #video-status{position:absolute;left:14px;right:82px;bottom:14px;background:var(--white);padding:12px;font-size:14px;line-height:1.5;color:var(--ink);margin:0}
 @media(max-width:600px){.video-toggle{right:12px;bottom:12px;width:44px;height:44px;min-height:44px}.video-toggle .icon{width:22px;height:22px}#video-status{right:68px;font-size:12px;padding:8px}}
+
+/* Final reading and touch-target pass, retaining compact dashboard data. */
+@media(max-width:600px){
+ .section-heading>p,.feature-panel p,.team-intro p,.team-rows p,.steps p,.faq-list p,.pilot-section>div>p{font-size:14px}
+ .faq-list summary{font-size:14px}
+ .menu-button{min-width:44px;min-height:44px}
+ .header nav.open a{min-height:44px;display:flex;align-items:center}
+}

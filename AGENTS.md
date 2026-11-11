@@ -29,3 +29,8 @@ The journal is a Read-mode extension of the pinned incumbent visual system; read
 Preserve four practical guides and two honest building stories, fictional examples, source-backed review and the flagged-versus-recovered distinction. Maintain anonymous public access, canonical URLs, Open Graph/Twitter metadata, article BlogPosting data, sitemap entries, subject-specific alt text and mobile table hints with aria-describedby. Verify native contents links, copy-link fallback and mobile navigation. A crawler-readable preview does not prove rendering in the live WhatsApp app.
 
 Artwork provenance lives in content/image-sources.json; optimized originals are in content/artwork/, responsive WebP files in dist/assets/journal/, social SVG masters in content/social/, and finished share JPEGs in dist/assets/social/. Preserve these sources and embedded metadata. Asset regeneration is optional tooling using Pillow, fontTools and an SVG rasterizer; production needs none of them.
+
+## Editorial punctuation
+Do not use em dashes in published copy, metadata, accessible labels or exported text. Prefer clear sentences, commas or a vertical bar in page-title separators.
+
+After CTA changes, select Daily Provisions and Demo video, then verify both the price and credit feature links restore Dashboard with Greenfield selected and review enabled. The delivery link targets Harbour.
