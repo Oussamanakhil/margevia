@@ -12,10 +12,10 @@ function renderInvoice(key){
  $('#invoice-total').textContent=money(item.total);$('#matched-total').textContent=money(item.matched);$('#difference-total').textContent=money(item.difference);
  const body=$('#invoice-rows');body.replaceChildren();
  item.rows.forEach(row=>{const tr=document.createElement('tr');row.forEach((value,index)=>{const td=document.createElement('td');td.textContent=index===4?(value>0?'+'+money(value):'Matched'):value;if(index===4)td.className=value>0?'difference-cell':'match-cell';tr.append(td);});body.append(tr);});
- $('#evidence-note').innerHTML='<svg class="icon"><use href="#doc"/></svg><span>Compared with <b>'+item.reference+'</b> and delivery note <b>'+item.delivery+'</b>.</span>';
+ $('#evidence-note').innerHTML='<svg class="icon" aria-hidden="true" focusable="false"><use href="#doc"/></svg><span>Compared with <b>'+item.reference+'</b> and delivery note <b>'+item.delivery+'</b>.</span>';
  const status=$('#review-status'),button=$('#review-button');const done=reviewed.has(key);
  status.textContent=item.difference===0?'All lines matched':done?'Ready for follow-up':'Needs review';status.className='tag '+(item.difference===0?'success':done?'':'warning');
- button.disabled=item.difference===0;button.innerHTML=item.difference===0?'No differences to review':done?'Reset review <svg class="icon"><use href="#arrow"/></svg>':'Prepare credit follow-up <svg class="icon"><use href="#arrow"/></svg>';
+ button.disabled=item.difference===0;button.innerHTML=item.difference===0?'No differences to review':done?'Reset review <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>':'Prepare credit follow-up <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>';
  $('#demo-feedback').textContent=done?`${money(item.difference)} ready for follow-up. No credit has been received and no supplier contacted.`:item.difference===0?'All three lines match the sample reference records.':'Sample only. No supplier is contacted.';
 }
 document.querySelectorAll('[data-invoice]').forEach(b=>b.addEventListener('click',()=>renderInvoice(b.dataset.invoice)));
