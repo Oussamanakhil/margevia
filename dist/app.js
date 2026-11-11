@@ -57,8 +57,8 @@ function syncVideoControl(){
  const playing=!demoVideo.paused&&!demoVideo.ended;
  videoToggle.setAttribute('aria-label',playing?'Pause video':'Play video');
  videoToggle.querySelector('span').textContent=playing?'Pause':'Play';
- videoToggle.querySelector('.video-play-icon').hidden=playing;
- videoToggle.querySelector('.video-pause-icon').hidden=!playing;
+ videoToggle.querySelector('.video-play-icon').toggleAttribute('hidden',playing);
+ videoToggle.querySelector('.video-pause-icon').toggleAttribute('hidden',!playing);
 }
 function showVideoError(){
  videoStatus.textContent='The video could not load. Select Play to try again.';
