@@ -13,6 +13,9 @@ colors:
   navy: "#122432"
   green: "#277455"
   amber: "#946127"
+  journal-feature-paper: "#f6f5f2"
+  journal-table-tint: "#f3f2f7"
+  journal-takeaway-line: "#c7c4ee"
 typography:
   display:
     fontFamily: "DM Sans, sans-serif"
@@ -39,6 +42,40 @@ typography:
     fontFamily: "DM Sans, sans-serif"
     fontSize: "12px"
     fontWeight: 400
+  journal-display:
+    fontFamily: "DM Sans, sans-serif"
+    fontSize: "clamp(42px, 4.5vw, 66px)"
+    fontWeight: 400
+    lineHeight: 1.1
+    letterSpacing: "-.035em"
+  article-title:
+    fontFamily: "DM Sans, sans-serif"
+    fontSize: "clamp(39px, 4.25vw, 60px)"
+    fontWeight: 400
+    lineHeight: 1.1
+    letterSpacing: "-.035em"
+  article-body:
+    fontFamily: "DM Sans, sans-serif"
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1.85
+  article-opening:
+    fontFamily: "DM Sans, sans-serif"
+    fontSize: "22px"
+    fontWeight: 400
+    lineHeight: 1.65
+    letterSpacing: "-.015em"
+  article-deck:
+    fontFamily: "DM Sans, sans-serif"
+    fontSize: "20px"
+    fontWeight: 400
+    lineHeight: 1.65
+  journal-card-title:
+    fontFamily: "DM Sans, sans-serif"
+    fontSize: "23px"
+    fontWeight: 400
+    lineHeight: 1.3
+    letterSpacing: "-.025em"
 rounded:
   square: "0"
   field: "3px"
@@ -90,6 +127,11 @@ components:
     padding: "22px"
   comparison-table:
     width: "100%"
+  article-callout:
+    backgroundColor: "{colors.purple-soft}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.square}"
+    padding: "24px 28px"
 ---
 
 # Design System: Margevia
@@ -129,11 +171,15 @@ The palette combines warm paper and cool neutral text with concentrated violet e
 - **Hairline Grey** (`line`) divides sections and structural rows.
 - **Deep Navy** (`navy`) anchors the announcement strip.
 
+The journal adds three local tints without changing the core palette: **Feature Paper** supports the lead story, **Table Tint** separates editorial column headings, and **Takeaway Line** frames the useful takeaway. These are the `journal-feature-paper`, `journal-table-tint` and `journal-takeaway-line` frontmatter tokens. Article callouts reuse Pale Violet.
+
 ## Typography
 
 DM Sans is locally supplied in weights 400, 500, 600 and 700, with sans-serif fallback. Display and section headings primarily use 400, with negative tracking rather than heavy weight to establish hierarchy. The hero's final phrase uses violet, upright emphasis.
 
 The frontmatter display and headline roles describe desktop defaults. Invoice titles use the title role. Body defaults to the body role, but actual explanatory copy varies by context: hero copy is 17px with 1.6 line height, section support is 14px with 1.7 line height, and operational text is predominantly 12px. Amounts and table values use tabular numerals. There is no separate monospace family. Team roles are real headings, without an eyebrow above them.
+
+The journal intentionally increases reading scale while retaining DM Sans and regular-weight headings. Its display, article title, reading body, opening paragraph, deck and card title are recorded as separate roles in the frontmatter. Article section headings are 32px with 1.25 line height. At 600px and below, article titles become 37px, prose 17px, openings 20px and section headings 28px. This Read-mode hierarchy belongs to editorial content and does not replace the compact dashboard type.
 
 ## Layout
 
@@ -146,9 +192,17 @@ Responsive rules follow the final cascade:
 - At 800px and below, the header becomes 74px, its CTA disappears, sections use 70px by 32px padding, and the invoice selector becomes a horizontal row above the detail. Feature content stacks; the hero heading is 39px. The pilot section becomes one column with a 25px gap and a form capped at 600px width.
 - At 600px and below, the header becomes 68px and a button toggles vertical navigation. The frame inset becomes 12px; sections use 53px by 23px padding. Hero content stacks with a 43px heading and a 470px illustrative area. Its caption sits at bottom -2px and motion controls at bottom -43px; control targets have a 40px minimum height. Invoice choices stack; amount summaries become label/value rows. The table retains a 490px minimum width inside a horizontal scroll region with a visible swipe hint. The three process steps, team, FAQ and pilot sections stack. Detail action targets have a 44px minimum height. The demo view tabs fill the width with equal buttons, 12px labels and 11px by 10px padding. The video panel follows the workspace’s -10px side margins; its placeholder uses a 420px minimum height, 40px by 22px padding, a 26px heading and 13px supporting text. The pilot form uses 20px by 16px padding; focus rows use 13px by 9px padding and location segments keep four columns with 6px gaps.
 
+### Journal and article layouts
+
+The journal is a Read-mode extension inside the existing inset page frame. The homepage journal grid uses three columns with 44px row and 28px column gaps. The index introduction pairs a large title with supporting copy; its featured story uses a 1.25fr / 1fr split. The remaining five articles form two columns of horizontal image/text entries. Article pages use a 940px heading measure and a panoramic 2.3:1 cover, followed by a 1080px reading layout: a 220px contents rail, 70px gap and a reading column up to 730px wide. The rail sticks 120px from the top. Related articles use two columns.
+
+At 1100px and below, the reading rail becomes 180px with a 40px gap. At 800px and below, featured content and article layouts stack, the rail becomes static, main gutters are 32px, and homepage cards use two columns. At 600px and below, gutters are 23px, cards and related articles use one column, and covers use a 3:2 crop. Article tables retain a 480px minimum width in a keyboard-focusable scroll region, with a visible mobile swipe hint associated through `aria-describedby`.
+
 ## Elevation & Depth
 
 Most depth comes from white surfaces, warm section backgrounds and one-pixel borders. Shadows are concentrated in the illustrative hero: source documents use `0 8px 32px #1521330a`, the hub uses `0 10px 30px #5355d42b`, and the result ticket uses `0 14px 44px #302f6f0e`. The expanded mobile menu uses `0 10px 20px #20203a0d`. The working table and ordinary sections do not use lifted shadows.
+
+Journal cards and reading callouts remain flat and square; their structure comes from image crops, spacing and hairlines. Physical shadows are confined to the editorial artwork, not additional UI elevation.
 
 ## Shapes
 
@@ -168,6 +222,9 @@ Square buttons and black 8px frame markers establish the outer geometry. Small s
 - **Pilot planner:** a pale panel with a native 52px-high, 16px team select and 4px corners. The required team choice starts with a prompt, then Purchasing, Operations, Finance, Owner / management and Other. Three explained radio rows offer Supplier prices, Delivered quantities and Supplier credits; the selected row has a pale-violet fill and violet border. Four 48px-minimum location segments offer 1, 2–5, 6–10 and 11+; the selected segment adds a violet inset border. Native radio keyboard behavior remains available, and segment focus has a 3px violet outline. The full-width Send brief action is disabled in a muted fill, with an explicit notice that choices stay on the page. No brief is downloaded or sent; recipient and delivery setup are pending.
 - **FAQ:** native details/summary rows with thin separators; the plus icon rotates on expansion.
 
+- **Journal cards and featured story:** linked editorial artwork, regular-weight title, description, category and reading time. Card titles provide the focusable link; duplicate card image links are removed from the tab order. Card imagery enlarges only slightly on hover. The featured story is one linked surface.
+- **Article reading elements:** a useful takeaway between tinted hairlines, pale-violet callouts, readable comparison tables, and a restrained sample-dashboard invitation. Native details/summary provides the contents disclosure. Copy article link copies the canonical URL, announces the result, and reveals a selected read-only URL field if clipboard access fails. There is no automatic scroll-position tracking or progress bar.
+
 Global interactive focus uses a 3px violet outline with 5px offset. The table region uses a 3px offset. Buttons, tabs, invoice options, menu bars and FAQ icons transition over .2s. Arrow icons and navigation underlines transition over .25s; action arrows move 3px right, download icons 2px down, and pressed buttons move 1px down. Team rows use a .22s background transition.
 
 The hero runs a finite source-to-result sequence lasting 2.77 seconds of active playback with `cubic-bezier(.16,1,.3,1)`. Three documents settle over 750ms with 210ms staggering; their icons acknowledge the sources, connectors reveal and briefly illuminate, the hub pulses with an expanding ring, then the result connection, ticket, amount and confirmation icon settle. It plays once on entry; there is no Replay control. Enabling motion after reducing it starts the hero again. Motion never gates the complete resting content.
@@ -176,7 +233,11 @@ Feature selection settles the active panel children; invoice selection settles t
 
 Motion is enabled by default at the user’s explicit request, including when the operating system prefers reduced motion. The Reduce motion / Enable motion control changes this page session only. Reduced mode cancels active Web Animations and disables CSS animations, transitions and smooth scrolling. An active-animation map pauses animations when their scope leaves the viewport or the tab becomes hidden, then resumes visible scopes when appropriate. The animation layer uses Web Animations without a library, primarily transform/opacity with short connector clipping and isolated color cues. There is no Replay control or persisted motion setting.
 
-The sidecar contains ten representative HTML/CSS previews. Interactive previews show the implemented visual states; they do not reproduce application JavaScript.
+The journal uses a separate, quiet motion treatment: card images scale to 1.025 over .5s with the existing easing, and its stylesheet disables this hover motion under the operating system reduced-motion preference. Article and index pages do not load the homepage animation controller or repeat entrance animations.
+
+Six original AI-generated physical-paper editorial artworks illustrate the subjects; they are conceptual images, not records or product screenshots. Preserve their subject-specific alt text and editorial captions. `content/image-sources.json` records prompts and original generation identifiers; checked-in JPEG artwork and responsive 600px/1200px WebP derivatives carry provenance metadata. Exact-type social SVG masters are separate from the finished JPEG share images. Do not replace this source chain with uncredited stock imagery.
+
+The sidecar contains eleven representative HTML/CSS previews. Interactive previews show the implemented visual states; they do not reproduce application JavaScript.
 
 ## Do's and Don'ts
 

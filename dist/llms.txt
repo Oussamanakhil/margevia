@@ -14,3 +14,6 @@ This is a frontend product preview. Live document processing, OCR, supplier cont
 
 ## Source
 https://github.com/Oussamanakhil/margevia
+
+## Journal
+Six English articles at https://margevia.vercel.app/blog/ cover invoice checks, units and pack sizes, delivery differences, credit follow-up, the product rationale and the first preview. Four practical guides and two building stories. Examples are fictional.

@@ -9,6 +9,18 @@ Run npm run check to validate JavaScript syntax with Node.js.
 DEPLOYMENT
 Vercel publishes dist/ with no build or install step. Configuration is in vercel.json. GitHub repository: https://github.com/Oussamanakhil/margevia
 
+JOURNAL
+The public /blog/ index contains four practical purchasing/operations/finance guides and two product-building stories, each on a permanent /blog/<slug>/ route. All content is static and accessible without signing in. Examples are fictional; no actual recovery results are claimed.
+
+Edit content/articles.json and the template in scripts/build-journal.py, then run npm run build:journal (Python 3 standard library). Commit the generated dist/blog/ pages, homepage section, metadata, sitemap.xml and robots.txt. Vercel continues to publish the checked-in dist/ directory without a build step. Presentation and local interactions live in dist/journal.css and dist/journal.js.
+
+ARTWORK AND SHARING
+Six AI-generated subject-specific editorial artworks are preserved in content/artwork/ with prompts/source identifiers in content/image-sources.json. Each has 600px and 1200px WebP derivatives. Eight distinct 1200x630 JPEG share images cover home, journal index and six articles. Seven outlined-type social SVG masters cover the index/articles in content/social/; the homepage share image is a separate generated asset. Provenance is embedded in the raster exports.
+
+Optional asset regeneration: scripts/prepare-journal-assets.py uses Pillow; scripts/build-share-images.py uses fontTools to create SVG masters, which require an SVG rasterizer to export JPEGs. These tools are not production dependencies and are not part of npm run build:journal. Preserve the existing exports if only editing prose.
+
+Home, index and articles expose static canonical/Open Graph/Twitter metadata; article pages also include BlogPosting data. Local metadata and image validation do not establish a successful preview in the live WhatsApp app; that app has not been tested.
+
 DEMO VIDEO
 The Dashboard / Demo video tabs are ready. Until a video is supplied, the video tab shows an honest coming-soon state. Set src in dist/video-config.js to a video asset or authorized hosted URL. Optional captions (English WebVTT) and poster are supported. The player has native controls, no autoplay, and pauses when switching back to Dashboard.
 

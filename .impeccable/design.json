@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-11T00:28:28.777530+00:00",
+  "generatedAt": "2026-11-11T02:20:21.786963+00:00",
   "title": "Design System: Margevia",
   "extensions": {
     "colorMeta": {
@@ -157,6 +157,48 @@
           "oklch(84% 0.09836 66.09)",
           "oklch(95% 0.09836 66.09)"
         ]
+      },
+      "journal-feature-paper": {
+        "displayName": "Feature Paper",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00412 91.45)",
+          "oklch(26% 0.00412 91.45)",
+          "oklch(38% 0.00412 91.45)",
+          "oklch(49% 0.00412 91.45)",
+          "oklch(61% 0.00412 91.45)",
+          "oklch(72% 0.00412 91.45)",
+          "oklch(84% 0.00412 91.45)",
+          "oklch(95% 0.00412 91.45)"
+        ]
+      },
+      "journal-table-tint": {
+        "displayName": "Table Tint",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00671 295.45)",
+          "oklch(26% 0.00671 295.45)",
+          "oklch(38% 0.00671 295.45)",
+          "oklch(49% 0.00671 295.45)",
+          "oklch(61% 0.00671 295.45)",
+          "oklch(72% 0.00671 295.45)",
+          "oklch(84% 0.00671 295.45)",
+          "oklch(95% 0.00671 295.45)"
+        ]
+      },
+      "journal-takeaway-line": {
+        "displayName": "Takeaway Line",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.05836 288.34)",
+          "oklch(26% 0.05836 288.34)",
+          "oklch(38% 0.05836 288.34)",
+          "oklch(49% 0.05836 288.34)",
+          "oklch(61% 0.05836 288.34)",
+          "oklch(72% 0.05836 288.34)",
+          "oklch(84% 0.05836 288.34)",
+          "oklch(95% 0.05836 288.34)"
+        ]
       }
     },
     "typographyMeta": {
@@ -179,6 +221,30 @@
       "label": {
         "displayName": "Label",
         "purpose": "Operational metadata and small labels."
+      },
+      "journal-display": {
+        "displayName": "Journal Display",
+        "purpose": "Journal Read-mode role; desktop default from journal.css, with responsive overrides documented in DESIGN.md."
+      },
+      "article-title": {
+        "displayName": "Article Title",
+        "purpose": "Journal Read-mode role; desktop default from journal.css, with responsive overrides documented in DESIGN.md."
+      },
+      "article-body": {
+        "displayName": "Article Body",
+        "purpose": "Journal Read-mode role; desktop default from journal.css, with responsive overrides documented in DESIGN.md."
+      },
+      "article-opening": {
+        "displayName": "Article Opening",
+        "purpose": "Journal Read-mode role; desktop default from journal.css, with responsive overrides documented in DESIGN.md."
+      },
+      "article-deck": {
+        "displayName": "Article Deck",
+        "purpose": "Journal Read-mode role; desktop default from journal.css, with responsive overrides documented in DESIGN.md."
+      },
+      "journal-card-title": {
+        "displayName": "Journal Card Title",
+        "purpose": "Journal Read-mode role; desktop default from journal.css, with responsive overrides documented in DESIGN.md."
       }
     },
     "shadows": [
@@ -243,6 +309,11 @@
         "name": "hero-motion-layout",
         "value": "450px desktop / 470px at max-width:600px",
         "purpose": "Right-aligned caption bottom -10px / -2px; controls bottom -51px / -43px. Control minimum height 36px / 40px. Existing visual tokens and component previews remain unchanged."
+      },
+      {
+        "name": "journal-card-hover",
+        "value": ".5s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Editorial card images scale to 1.025 on hover. OS reduced-motion removes transform and transition. Article/index pages load journal.js, not the homepage animation controller; no progress decoration or repeated entrances."
       }
     ],
     "breakpoints": [
@@ -343,6 +414,14 @@
       "description": "Video-selected visual preview of the two-view switcher. The live page initially selects Dashboard; Left/Right, Home and End select and focus tabs, the return control focuses Dashboard, and leaving video pauses playback. No video source is supplied. This HTML/CSS preview does not reproduce application JavaScript.",
       "html": "<div class=\"ds-demo-tabs\" role=\"tablist\" aria-label=\"Explore Margevia\"><button role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Dashboard</button><button id=\"ds-video-tab\" role=\"tab\" aria-selected=\"true\" aria-controls=\"ds-video-panel\">Demo video</button></div><div class=\"ds-video-panel\" id=\"ds-video-panel\" role=\"tabpanel\" aria-labelledby=\"ds-video-tab\"><div class=\"ds-video-placeholder\"><svg class=\"ds-video-illustration\" viewBox=\"0 0 96 72\" aria-hidden=\"true\"><rect x=\"1\" y=\"1\" width=\"94\" height=\"70\" rx=\"8\"/><path d=\"M1 16h94M12 8h2m6 0h2m6 0h2\"/><path class=\"ds-video-play\" d=\"m41 29 19 12-19 12z\"/></svg><h3>A closer look at Margevia.<br><span>Coming soon on video.</span></h3><p>The product walkthrough will be available here. In the meantime, try the interactive dashboard with sample invoices.</p><button class=\"ds-video-return\" type=\"button\">Explore the dashboard</button></div></div>",
       "css": ".ds-demo-tabs{font-family:var(--font,'DM Sans',sans-serif);display:inline-flex;align-items:center;gap:4px;padding:5px;border:1px solid #d9d8e3;background:#f8f8fb;border-radius:7px;margin:0 0 24px}.ds-demo-tabs button{font-family:inherit;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:11px 22px;font-size:13px;font-weight:500;border:0;border-radius:4px;background:transparent;color:#62666b;cursor:pointer;transition:background-color .2s,color .2s}.ds-demo-tabs button[aria-selected=true]{background:var(--purple,#5758db);color:#fff}.ds-demo-tabs button:not([aria-selected=true]):hover{background:#ecebf7;color:var(--ink,#191b1d)}.ds-demo-tabs button:focus-visible,.ds-video-return:focus-visible{outline:3px solid var(--purple,#5758db);outline-offset:5px}.ds-video-panel{font-family:var(--font,'DM Sans',sans-serif);color:var(--ink,#191b1d);border:1px solid #cfcedd;border-radius:8px;background:#f9f9fc;overflow:hidden}.ds-video-placeholder{min-height:510px;padding:58px 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.ds-video-illustration{width:96px;height:72px;fill:#fff;stroke:#bdbbdb;stroke-width:1.3;margin-bottom:28px}.ds-video-play{fill:#efefff;stroke:var(--purple,#5758db)}.ds-video-placeholder h3{font-size:30px;letter-spacing:-.7px;line-height:1.25;font-weight:400;margin:0 0 18px}.ds-video-placeholder h3 span{color:#737574}.ds-video-placeholder p{max-width:425px;font-size:14px;line-height:1.7;color:var(--muted,#62666b);margin:0 0 20px}.ds-video-return{font-family:inherit;display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:500;color:var(--purple,#5758db);padding:0;border:0;background:none;min-height:44px;cursor:pointer}.ds-video-return:hover{text-decoration:underline}@media(max-width:600px){.ds-demo-tabs{display:flex;width:100%;margin-bottom:22px}.ds-demo-tabs button{flex:1;padding:11px 10px;font-size:12px}.ds-video-placeholder{min-height:420px;padding:40px 22px}.ds-video-placeholder h3{font-size:26px}.ds-video-placeholder p{font-size:13px}.ds-video-panel{margin:0 -10px}}@media(prefers-reduced-motion:reduce){.ds-demo-tabs button{transition:none}}"
+    },
+    {
+      "name": "Editorial reading callout",
+      "kind": "custom",
+      "refersTo": "article-callout",
+      "description": "Read-mode body and pale-violet callout reuse the incumbent typeface and accent at a larger reading scale. Noninteractive; no hover treatment.",
+      "html": "<div class=\"ds-reading\"><p>Keep the agreement, delivery record and invoice together.</p><aside class=\"ds-article-callout\"><strong>A useful distinction</strong><p>A flagged difference is a reason to review the evidence. It is not a recovered credit.</p></aside></div>",
+      "css": ".ds-reading{font-family:var(--font,\"DM Sans\",sans-serif);font-size:18px;line-height:1.85;color:var(--ink,#191b1d);max-width:730px}.ds-reading>p{margin:0 0 24px}.ds-article-callout{background:var(--purple-soft,#efefff);padding:24px 28px;margin:30px 0}.ds-article-callout strong{display:block;font-size:14px;font-weight:500;color:var(--purple,#5758db);margin-bottom:9px}.ds-article-callout p{margin:0;font-size:17px;line-height:1.7}@media(max-width:600px){.ds-reading{font-size:17px}.ds-article-callout{padding:20px}}"
     }
   ],
   "narrative": {

@@ -5,6 +5,7 @@
   "description": "Margevia public product preview",
   "scripts": {
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
-    "check": "node --check dist/app.js && node --check dist/motion.js && node --check dist/video-config.js"
+    "check": "node --check dist/app.js && node --check dist/motion.js && node --check dist/video-config.js && node --check dist/journal.js",
+    "build:journal": "python3 scripts/build-journal.py"
   }
 }
