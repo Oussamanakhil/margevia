@@ -34,3 +34,10 @@ Artwork provenance lives in content/image-sources.json; optimized originals are 
 Do not use em dashes in published copy, metadata, accessible labels or exported text. Prefer clear sentences, commas or a vertical bar in page-title separators.
 
 After CTA changes, select Daily Provisions and Demo video, then verify both the price and credit feature links restore Dashboard with Greenfield selected and review enabled. The delivery link targets Harbour.
+
+## Pilot brief delivery
+- api/pilot.js validates and sends briefs through a server-only Make webhook. dist/pilot.js owns the form.
+- Recipient is fixed to support@margevia.solutions in Make scenario 8524871, Adham’s team 3588697. The chat’s Make connector currently belongs to Oussama’s other workspace.
+- Never commit PILOT_WEBHOOK_URL or .vercel/pilot-webhook-url. Never use SaliencyLab Gmail for Margevia.
+- npm test covers validation and delivery failure semantics. Success requires the actual Gmail message ID, not generic webhook acceptance.
+- See PILOT-DELIVERY.md for setup, testing and per-instance rate-limit limitations.

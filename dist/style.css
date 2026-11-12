@@ -81,3 +81,15 @@ html[data-motion=reduced]{scroll-behavior:auto}html[data-motion=reduced] *,html[
 
 /* Consistent authored navigation and workflow icons. */
 .direction-up{rotate:-90deg}.direction-back{rotate:180deg}.footer-bottom>a{display:inline-flex;align-items:center;gap:8px}.footer-bottom>a .icon{width:16px;height:16px}.journal-back{gap:8px}.step-complete .flow-arrow{width:13px;height:13px;color:var(--muted)}
+
+/* Contact fields extend the established pilot planner. */
+.pilot-field>input{display:block;width:100%;min-width:0;min-height:52px;padding:12px 14px;border:1px solid #cfcfdc;border-radius:4px;background:#fff;color:var(--ink);font:inherit;font-size:16px;caret-color:var(--purple)}
+.pilot-field>input:focus{border-color:var(--purple)}
+.pilot-field>input[aria-invalid=true]{border-color:#a33030}
+.pilot-section .field-error{color:#9c2929;font-size:14px;line-height:1.5;margin:8px 0 0}
+.pilot-section #pilot-feedback[data-state=error]{color:#9c2929}
+.pilot-section #pilot-feedback[data-state=success]{color:var(--green)}
+.pilot-section .pilot-email-link{overflow-wrap:anywhere}
+.pilot-email-link a{color:var(--purple);text-decoration:underline;text-underline-offset:3px}
+.pilot-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.pilot-field>input:disabled{opacity:1;color:#555367;background:#efedf4}

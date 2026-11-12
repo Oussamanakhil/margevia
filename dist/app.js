@@ -30,12 +30,6 @@ document.querySelectorAll('[data-open-invoice]').forEach(a=>a.addEventListener('
 const menu=$('.menu-button');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');$('#nav').classList.toggle('open',open);});
 function closeMenu(){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');$('#nav').classList.remove('open');}
 $('#nav').querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){closeMenu();menu.focus();}});
-// Delivery stays unavailable until the owner supplies a recipient and a delivery service is connected.
-// Never claim success or download a file in place of a submission.
-$('#pilot-form').addEventListener('submit',event=>{
- event.preventDefault();
- $('#pilot-feedback').textContent='Sending is not available yet. No information was sent.';
-});
 renderInvoice(currentInvoice);
 
 // Dashboard and video share one accessible, keyboard-operable view switcher.
