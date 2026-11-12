@@ -93,3 +93,11 @@ html[data-motion=reduced]{scroll-behavior:auto}html[data-motion=reduced] *,html[
 .pilot-email-link a{color:var(--purple);text-decoration:underline;text-underline-offset:3px}
 .pilot-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .pilot-field>input:disabled{opacity:1;color:#555367;background:#efedf4}
+
+/* Shared footer destinations. */
+.footer-bottom{align-items:center;flex-wrap:wrap}
+.footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;margin-left:auto}
+.footer-links a{display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.footer-linkedin svg{flex:none;fill:currentColor;stroke:none}
+.footer-links a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:600px){.footer-bottom>span:first-child{flex-basis:100%}.footer-links{width:100%;margin-left:0;justify-content:space-between;gap:8px 14px}}

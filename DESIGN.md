@@ -260,3 +260,5 @@ The final mobile readability pass uses 14px explanatory copy in feature, workflo
 
 ### Icon and sharing review
 UI symbols use authored 24-unit SVGs, a 1.6 stroke, rounded ends and consistent sizing. Delivery uses a truck and credits use a receipt, preserving checks for completed states. Navigation and workflow arrows share the SVG family. Decorative SVGs are hidden from assistive technology, including dynamic dashboard content. The site mark is shared by SVG, multi-size ICO and Apple touch icons; scripts/build-icons.py reproduces exports. Existing eight 1200 × 630 JPEG sharing images were reviewed at 360px display width and retained. Sharing image alt text describes the artwork. Actual WhatsApp client rendering remains a separate check.
+
+The shared footer includes Margevia’s LinkedIn company link with a filled 18px brand icon and visible LinkedIn label. Footer destinations wrap on narrow screens and keep 44px touch targets.
