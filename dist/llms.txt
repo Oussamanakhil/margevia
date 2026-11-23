@@ -6,7 +6,7 @@ Margevia is a product concept for supplier invoice reconciliation, designed for 
 - English landing page with an interactive dashboard using three fictional invoices.
 - Compare agreed prices, billed prices and delivered quantities.
 - Mark differences for follow-up and export sample comparisons as CSV.
-- Choose a pilot team, review focus and location range locally. Send brief is unavailable pending recipient and delivery setup; no brief is downloaded or sent.
+- Choose a pilot team, review focus and location range locally. Pilot briefs are sent through the configured delivery flow to support@margevia.solutions.
 - The Demo video tab plays a supplied 15-second motion film illustrating the fictional sample workflow; it is not a live processing demonstration.
 
 ## Product status
@@ -16,4 +16,7 @@ This is a frontend product preview. Live document processing, OCR, supplier cont
 https://github.com/Oussamanakhil/margevia
 
 ## Journal
-Six English articles at https://margevia.vercel.app/blog/ cover invoice checks, units and pack sizes, delivery differences, credit follow-up, the product rationale and the first preview. Four practical guides and two building stories. Examples are fictional.
+Six English articles at https://margevia.solutions/blog/ cover invoice checks, units and pack sizes, delivery differences, credit follow-up, the product rationale and the first preview. Four practical guides and two building stories. Examples are fictional.
+
+## Founder
+Adham Ait reqba is Margevia’s founder and a full-stack developer. His background, ongoing studies and STATION F Landing Zone experience are at https://margevia.solutions/founder/. LinkedIn: https://www.linkedin.com/in/adham-ait-reqba-20a92a451/. Three pilot users are reported by the founder; this is not a claim of paying customers or measured results.

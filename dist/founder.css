@@ -1,0 +1,47 @@
+/* Founder editorial surface: extends the existing Margevia reading system. */
+.founder-main{background:var(--white)}
+.founder-intro{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,96px);align-items:center;padding:72px var(--gutter) 64px}
+.founder-intro-copy{min-width:0;padding:10px 0}
+.founder-intro h1{font-size:clamp(54px,5.5vw,80px);font-weight:400;line-height:1.02;letter-spacing:-.035em;margin:0 0 24px;text-wrap:balance}
+.founder-period{color:var(--purple-bright)}
+.founder-role{color:var(--purple);font-size:14px;font-weight:500;line-height:1.6;margin:0 0 30px}
+.founder-lead{font-size:clamp(22px,2.1vw,29px);line-height:1.4;letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
+.founder-summary{color:var(--muted);font-size:16px;line-height:1.8;max-width:46ch;margin:0 0 28px}
+.founder-portrait{margin:0;min-width:0}
+.founder-portrait img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:var(--paper)}
+.founder-portrait figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;font-size:12px;line-height:1.6;color:var(--muted);padding:15px 0 0}
+.founder-portrait figcaption a{display:inline-flex;align-items:center;gap:8px;color:var(--purple);min-height:44px;margin-top:-12px}
+.founder-portrait figcaption .icon{width:16px;height:16px;transform:rotate(90deg)}
+.founder-section{padding:76px var(--gutter);border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(36px,7vw,120px)}
+.founder-section h2{font-size:clamp(30px,3vw,43px);line-height:1.18;font-weight:400;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.founder-section h2 em{color:var(--purple);font-style:normal}
+.founder-prose{max-width:66ch}
+.founder-prose p,.founder-section-intro>p,.founder-record>p:not(.founder-date):not(.founder-organisation),.founder-education div>p:not(.founder-date){font-size:17px;line-height:1.8;color:var(--muted);margin:0 0 20px}
+.founder-prose .founder-opening{font-size:23px;line-height:1.5;color:var(--ink);letter-spacing:-.015em;margin:0 0 24px}
+.founder-prose .text-link{margin-top:8px;min-height:44px;line-height:1.5}
+.founder-background{background:var(--paper)}
+.founder-section-intro>p{margin-top:24px;max-width:33ch}
+.founder-record{padding:0 0 30px;border-bottom:1px solid var(--line);margin-bottom:30px}
+.founder-date{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;line-height:1.6;margin:0 0 10px}
+.founder-record h3{font-size:23px;line-height:1.35;letter-spacing:-.02em;font-weight:500;margin:0 0 7px}
+.founder-organisation{font-size:15px;line-height:1.6;color:var(--purple);margin:0 0 16px}
+.founder-record>p:last-child{margin-bottom:0!important}
+.founder-record:last-child{margin-bottom:0;padding-bottom:0;border:0}
+.founder-education>h3{margin:8px 0 24px}
+.founder-education>div+div{margin-top:28px}
+.founder-education h4{font-size:18px;font-weight:500;line-height:1.5;margin:0 0 10px}
+.founder-now{background:var(--white)}
+.founder-contact{background:var(--navy);color:var(--white);align-items:center;grid-template-columns:1.4fr 1fr}
+.founder-contact h2{font-size:clamp(30px,3vw,42px)}
+.founder-contact p{font-size:16px;line-height:1.8;max-width:61ch;color:#d6dfe5;margin:24px 0 0}
+.founder-contact-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px;justify-self:end}
+.founder-contact .button{background:var(--white);color:var(--navy)}
+.founder-contact .button:hover{background:var(--purple-soft)}
+.founder-contact .text-link{color:#dddfff;min-height:44px}
+.founder-page .text-link:hover,.founder-portrait figcaption a:hover{text-decoration:underline}
+.founder-page .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(min-width:1600px){.founder-intro{padding-top:88px;padding-bottom:80px}.founder-portrait{max-width:540px;justify-self:end}}
+@media(max-width:1000px){.founder-intro{gap:32px;padding-top:48px}.founder-desktop-break{display:none}.founder-section{gap:40px}.founder-contact{grid-template-columns:1fr}.founder-contact-actions{justify-self:start}}
+@media(max-width:700px){.founder-intro{grid-template-columns:1fr;padding:44px 26px 34px;gap:32px}.founder-intro h1{font-size:58px;margin-bottom:20px}.founder-role{margin-bottom:22px}.founder-lead{font-size:24px}.founder-summary{max-width:none}.founder-portrait{width:100%;max-width:480px;justify-self:center}.founder-section{grid-template-columns:1fr;padding:48px 26px;gap:28px}.founder-section h2{font-size:33px}.founder-section-intro>p{max-width:none;font-size:16px;margin-bottom:0}.founder-prose p,.founder-record>p:not(.founder-date):not(.founder-organisation),.founder-education div>p:not(.founder-date){font-size:16px}.founder-prose .founder-opening{font-size:21px}.founder-contact-actions{gap:14px;width:100%}.founder-contact-actions .button{white-space:normal;text-align:left}.founder-record h3{font-size:22px}.founder-page .header nav{gap:20px}}
+@media(max-width:360px){.founder-intro,.founder-section{padding-left:20px;padding-right:20px}.founder-intro h1{font-size:50px}.founder-section h2{font-size:29px}.founder-page .button{gap:12px;padding:13px 15px}}
+@media(prefers-reduced-motion:reduce){.founder-page{scroll-behavior:auto}.founder-page *{transition:none!important;animation:none!important}html:has(.founder-page){scroll-behavior:auto}}

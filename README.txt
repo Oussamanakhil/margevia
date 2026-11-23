@@ -1,6 +1,6 @@
 MARGEVIA | PUBLIC PRODUCT PREVIEW
 
-A lightweight English landing page and interactive invoice reconciliation sample.
+A lightweight English landing page, interactive invoice reconciliation sample, public journal and founder profile.
 
 LOCAL PREVIEW
 Run npm run dev and open http://127.0.0.1:4173. Requires Python 3. No dependencies to install.
@@ -13,6 +13,13 @@ JOURNAL
 The public /blog/ index contains four practical purchasing/operations/finance guides and two product-building stories, each on a permanent /blog/<slug>/ route. All content is static and accessible without signing in. Examples are fictional; no actual recovery results are claimed.
 
 Edit content/articles.json and the template in scripts/build-journal.py, then run npm run build:journal (Python 3 standard library). Commit the generated dist/blog/ pages, homepage section, metadata, sitemap.xml and robots.txt. Vercel continues to publish the checked-in dist/ directory without a build step. Presentation and local interactions live in dist/journal.css and dist/journal.js.
+
+FOUNDER
+The public /founder/ profile introduces Adham Ait reqba with the user-confirmed biography and LinkedIn URL from 23 November 2026. Three pilot users are confirmed; revenue, savings and product outcomes are not. The page links to /#demo, /#pilot, /blog/why-we-are-building-margevia/ and his LinkedIn profile. It is discoverable through the shared footer and editorial navigation.
+
+Edit scripts/build-founder.py and dist/founder.css, then run npm run build:founder to generate dist/founder/index.html. The generator reuses the generated journal header and footer, so rerun npm run build:founder after journal shell updates. npm run build:site runs the journal build followed by the founder build. Commit generated output; Vercel still publishes dist/ without a build step.
+
+Canonical URL: https://margevia.solutions/founder/. The page includes ProfilePage/Person data and static Open Graph/Twitter metadata, with a dedicated 1200x630 share image. The retained user-selected suit portrait is an AI edit, with provenance in content/founder-image-source.json. Preserve that record and the existing exports.
 
 ARTWORK AND SHARING
 Six AI-generated subject-specific editorial artworks are preserved in content/artwork/ with prompts/source identifiers in content/image-sources.json. Each has 600px and 1200px WebP derivatives. Eight distinct 1200x630 JPEG share images cover home, journal index and six articles. Seven outlined-type social SVG masters cover the index/articles in content/social/; the homepage share image is a separate generated asset. Provenance is embedded in the raster exports.

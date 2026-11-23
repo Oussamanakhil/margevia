@@ -1,0 +1,11 @@
+{
+  "portrait": {
+    "file": "dist/assets/founder/adham-portrait.jpg",
+    "origin": "Existing user-selected AI-edited suit portrait created 11 November 2026; mechanically resized to 960px.",
+    "prompt": "Use case: identity-preserve. Edit the supplied real photograph of Adham into a premium, photorealistic LinkedIn business portrait. This photo is the identity source and edit target. Preserve his actual identity precisely: same facial geometry, slim oval face, eyes, nose, lips, ears, hairline, short cropped dark hair, short neatly shaped beard, natural skin tone, apparent age and individual asymmetry. Do not beautify into another person, broaden his jaw, alter ethnicity, smooth away skin texture, or change his physique. Replace his blue casual shirt with a beautifully fitted dark navy single-breasted business suit jacket, understated notch lapels and a crisp white collared shirt with top button open, no tie, no jewelry visible. Head-and-upper-chest portrait, square composition, shoulders slightly turned and eyes toward camera, relaxed professional expression consistent with the reference. Preserve enough headroom and breathing room around shoulders for a circular LinkedIn crop; full head, no cut hair. Remove all event-wall logos and writing and plants. Background: elegant neutral warm light grey studio backdrop with soft natural light falloff, no objects, no office CGI. Soft directional window light flattering but realistic, subtle catchlights, 85mm portrait lens look. High quality executive photography, authentic skin and fabric texture, clean natural retouching. 1200x1200 square output. No text, logos or watermark."
+  },
+  "social": {
+    "file": "dist/assets/social/founder-share-v1.jpg",
+    "origin": "Exact-type social composition using the same portrait and local DM Sans. No new likeness generated."
+  }
+}

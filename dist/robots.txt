@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://margevia.vercel.app/sitemap.xml
+Sitemap: https://margevia.solutions/sitemap.xml

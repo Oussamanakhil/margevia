@@ -4,7 +4,7 @@ import json,re,html,math
 from datetime import date
 ROOT=Path(__file__).resolve().parents[1];DIST=ROOT/'dist'
 ARTICLES=json.loads((ROOT/'content/articles.json').read_text())
-BASE='https://margevia.vercel.app';PUBLISHED='2026-11-11';DISPLAY_DATE='11 November 2026'
+BASE='https://margevia.solutions';PUBLISHED='2026-11-11';DISPLAY_DATE='11 November 2026'
 esc=lambda s:html.escape(str(s),quote=True)
 for a in ARTICLES:
  words=' '.join([a['title'],a['intro'],a['takeaway']]+[s['title']+' '+' '.join(s['paragraphs']) for s in a['sections']])
@@ -12,10 +12,10 @@ for a in ARTICLES:
 home=(DIST/'index.html').read_text()
 mark='<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 25V8l8 9 5-10 5 10 8-9v17M3 25h8l5-9 5 9h8"/></svg>'
 arrow='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg>'
-header=f'''<a class="skip" href="#main">Skip to content</a><header class="header journal-header"><a class="brand" href="/" aria-label="Margevia home">{mark}<span>Margevia</span></a><nav id="nav" aria-label="Main navigation"><a href="/#product">Product</a><a href="/#how-it-works">How it works</a><a href="/blog/" aria-current="page">Journal</a><a href="/#pilot">Plan a pilot</a></nav><a class="button small header-cta" href="/#demo">Explore the demo {arrow}</a><button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Open navigation"><span></span><span></span></button></header>'''
+header=f'''<a class="skip" href="#main">Skip to content</a><header class="header journal-header"><a class="brand" href="/" aria-label="Margevia home">{mark}<span>Margevia</span></a><nav id="nav" aria-label="Main navigation"><a href="/#product">Product</a><a href="/#how-it-works">How it works</a><a href="/blog/" aria-current="page">Journal</a><a href="/founder/">Founder</a><a href="/#pilot">Plan a pilot</a></nav><a class="button small header-cta" href="/#demo">Explore the demo {arrow}</a><button class="menu-button" aria-expanded="false" aria-controls="nav" aria-label="Open navigation"><span></span><span></span></button></header>'''
 arrow_back=arrow.replace('class="icon"', 'class="icon direction-back"')
 arrow_up=arrow.replace('class="icon"', 'class="icon direction-up"')
-footer=f'''<footer class="footer"><div class="footer-main"><a class="brand" href="/">{mark}Margevia</a><p>Every purchase, accounted for.</p><a href="/#demo">Explore the demo {arrow}</a></div><div class="footer-bottom"><span>© 2026 Margevia · Product preview</span><div class="footer-links"><a href="/blog/">The journal</a><a class="footer-linkedin" href="https://www.linkedin.com/company/margevia" aria-label="Margevia on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8v-4.64c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.72H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.98 0 3.58 1.96 3.58 4.51v5.26Z"/></svg><span>LinkedIn</span></a><a href="#main">Back to top {arrow_up}</a></div></div></footer>'''
+footer=f'''<footer class="footer"><div class="footer-main"><a class="brand" href="/">{mark}Margevia</a><p>Every purchase, accounted for.</p><a href="/#demo">Explore the demo {arrow}</a></div><div class="footer-bottom"><span>© 2026 Margevia · Product preview</span><div class="footer-links"><a href="/founder/">Meet the founder</a><a href="/blog/">The journal</a><a class="footer-linkedin" href="https://www.linkedin.com/company/margevia" aria-label="Margevia on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8v-4.64c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.72H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.98 0 3.58 1.96 3.58 4.51v5.26Z"/></svg><span>LinkedIn</span></a><a href="#main">Back to top {arrow_up}</a></div></div></footer>'''
 def metadata(title,desc,url,image,kind='website',alt='Margevia logo and two connected invoice records beside the words Every purchase. Accounted for.'):
  return f'''<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}">
 <meta name="robots" content="index,follow"><meta name="theme-color" content="#f3f2ef">
@@ -66,7 +66,7 @@ for i,a in enumerate(ARTICLES):
  extra=f'<meta property="article:published_time" content="{PUBLISHED}"><meta property="article:section" content="{esc(a["category"])}"><script type="application/ld+json">{json.dumps(structured,ensure_ascii=False).replace("<","&lt;")}</script>'
  folder=DIST/'blog'/a['slug'];folder.mkdir(exist_ok=True)
  (folder/'index.html').write_text(shell(a['title']+' | Margevia',a['description'],f"/blog/{a['slug']}/",BASE+f"/assets/social/{a['slug']}-share-v1.jpg",article,'article',extra,alt=a['title']+' '+a['alt']))
-urls=[BASE+'/',BASE+'/blog/']+[a['url'] for a in ARTICLES]
-(DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+u+'</loc><lastmod>'+PUBLISHED+'</lastmod></url>' for u in urls)+'</urlset>\n')
+urls=[BASE+'/',BASE+'/blog/',BASE+'/founder/']+[a['url'] for a in ARTICLES]
+(DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+u+'</loc><lastmod>'+('2026-11-23' if u.endswith('/founder/') else PUBLISHED)+'</lastmod></url>' for u in urls)+'</urlset>\n')
 (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'/sitemap.xml\n')
 print('Built six complete articles, the journal index, homepage section and sharing metadata.')

@@ -30,6 +30,11 @@ Preserve four practical guides and two honest building stories, fictional exampl
 
 Artwork provenance lives in content/image-sources.json; optimized originals are in content/artwork/, responsive WebP files in dist/assets/journal/, social SVG masters in content/social/, and finished share JPEGs in dist/assets/social/. Preserve these sources and embedded metadata. Asset regeneration is optional tooling using Pillow, fontTools and an SVG rasterizer; production needs none of them.
 
+## Founder source and publishing
+The public /founder/ page extends the existing editorial system. Read .impeccable/founder-brief.md before changes. scripts/build-founder.py generates dist/founder/index.html using the generated journal header/footer; dist/founder.css contains the local presentation. Run npm run build:founder after founder source or journal shell changes. npm run build:site runs both generators in the required order. Commit generated output; do not hand-edit the founder HTML.
+
+Preserve the biography and LinkedIn URL confirmed by the user on 23 November 2026. Three pilot users are confirmed, with no verified revenue, savings or product outcomes. STATION F Entrepreneur in Residence starts November 2026; EPSI studies remain ongoing. Retain the selected AI-edited suit portrait and content/founder-image-source.json provenance. Keep /founder/ discovery in the shared footer and editorial navigation, canonical metadata, ProfilePage/Person data and sitemap entry. Check the /#demo, /#pilot and journal links, mobile navigation, reduced motion, and 1440px, 390px and 320px layouts.
+
 ## Editorial punctuation
 Do not use em dashes in published copy, metadata, accessible labels or exported text. Prefer clear sentences, commas or a vertical bar in page-title separators.
 
